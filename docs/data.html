@@ -13,7 +13,6 @@
 
 <title>Data</title>
 
-<script src="site_libs/header-attrs-2.4/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
@@ -23,10 +22,12 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="site_libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
 <script src="site_libs/viz-1.8.2/viz.js"></script>
 <link href="site_libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
-<script src="site_libs/grViz-binding-1.0.5/grViz.js"></script>
+<script src="site_libs/grViz-binding-1.0.6.1/grViz.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -37,7 +38,7 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-      </style>
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -386,8 +387,8 @@ $(document).ready(function () {
 <div id="working-directory-setup" class="section level2">
 <h2>Working Directory Setup</h2>
 <p>It is highly recommended that you create a <code>Working_Directory</code> to save all the course materials. Under your working directory, you place the unzipped <code>demo_data</code> directory. Also under your <code>Working_Directory</code> are all the notebook files you create for the tutorials and assignments.</p>
-<div id="htmlwidget-0786a78ec489a431a27c" style="width:672px;height:480px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0786a78ec489a431a27c">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot]\n\nnode[style=filled, color = grey90, penwidth = 0.3, fontcolor = grey30]\nedge[color= grey40, alpha = 0.2, penwidth= 0.4, arrowsize=0.8, arrowhead = normal]\n\na [label = \"Working_Directory\", shape = folder, fillcolor= \"#B0E2FC\"]\nb [label = \"demo_data\", shape = folder, fillcolor= \"#B0E2FC\"]\nc1 [label = \"script1.ipynb\", shape=file, fillcolor= \"#96F597\"]\nc2 [label = \"script1.ipynb\", shape=file, fillcolor= \"#96F597\"]\nc3 [label = \"...\", shape=file, fillcolor= \"#96F597\"]\nd1 [label = \"dataset1.csv\", shape = file, fillcolor=\"#96F597\"]\nd2 [label = \"dataset2.csv\", shape = file, fillcolor=\"#96F597\"]\nd3 [label = \"...\", shape = file, fillcolor=\"#96F597\"]\n\na -> {b, c1, c2, c3}\nb -> {d1,d2, d3}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4f484284642b01aa8b0b" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4f484284642b01aa8b0b">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot]\n\nnode[style=filled, color = grey90, penwidth = 0.3, fontcolor = grey30]\nedge[color= grey40, alpha = 0.2, penwidth= 0.4, arrowsize=0.8, arrowhead = normal]\n\na [label = \"Working_Directory\", shape = folder, fillcolor= \"#B0E2FC\"]\nb [label = \"demo_data\", shape = folder, fillcolor= \"#B0E2FC\"]\nc1 [label = \"script1.ipynb\", shape=file, fillcolor= \"#96F597\"]\nc2 [label = \"script1.ipynb\", shape=file, fillcolor= \"#96F597\"]\nc3 [label = \"...\", shape=file, fillcolor= \"#96F597\"]\nd1 [label = \"dataset1.csv\", shape = file, fillcolor=\"#96F597\"]\nd2 [label = \"dataset2.csv\", shape = file, fillcolor=\"#96F597\"]\nd3 [label = \"...\", shape = file, fillcolor=\"#96F597\"]\n\na -> {b, c1, c2, c3}\nb -> {d1,d2, d3}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 <p>With the above file structure, if you want to access a particular file in the <code>demo_data</code> in your R script, you may access it using the following path:</p>
 <ul>
 <li>Absolute Path: <code>Path_to_Your_Working_Directory/demo_data/dataset1.csv</code></li>
@@ -422,7 +423,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
