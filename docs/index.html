@@ -375,40 +375,52 @@ $(document).ready(function () {
 </div>
 
 
-<p><em>This site is last-updated on 2020-10-23</em></p>
+<p><em>This site is last-updated on 2020-10-29</em></p>
 <hr />
 <div class="section level1">
 <h1><i class="fas  fa-clipboard-check "></i> Annoucements</h1>
 <p>Important course information will be posted on this web page and announced in class. You are responsible for all material that appears here and should check this page for updates frequently.</p>
 <ul>
-<li><strong>2020-10-23</strong>: This course website is still under construction…</li>
+<li><strong>2020-10-29</strong>: This course website is still under construction…</li>
 </ul>
 <!-- The course materials will be updated on a weekly basis. Please note that not all the materials have been complete and make sure that you visit this website regularly to get the most up-to-date materials/information.  -->
 <ul>
-<li><strong>2020-10-07</strong>: This course has prerequisites. Please read the <a href="FAQ.html">FAQ</a> very carefully. <!-- - **2020-02-24**: Due to the outbreak of the coronavirus disease (COVID-19), the course schedule has been updated in response to the change of the semester start.  --> <!-- - **2020-01-15**: For those who are considering taking this course, please read the [FAQ](FAQ.html) first before you make the decision. Thank you very much. --></li>
+<li><strong>2020-10-07</strong>: This course has <strong>prerequisites</strong>. Please read the <a href="FAQ.html">FAQ</a> very carefully. <!-- - **2020-02-24**: Due to the outbreak of the coronavirus disease (COVID-19), the course schedule has been updated in response to the change of the semester start.  --> <!-- - **2020-01-15**: For those who are considering taking this course, please read the [FAQ](FAQ.html) first before you make the decision. Thank you very much. --></li>
 </ul>
 <hr />
 </div>
 <div class="section level1">
 <h1><i class="fas  fa-clipboard-check "></i> Course Description</h1>
-<p>Computational Linguistics (CL) is now a very active sub-discipline in applied linguistics. Its main focus is on the computational text analytics, which is essentially about leveraging computational tools, techniques, and algorithms to <em>process</em> and <em>understand</em> natural language data (in spoken or textual formats). Therefore, this course aims to introduce useful strategies and common workflows that have been widely adopted by data scientists to extract useful insights from natural language data. In particular, we will focus on textual data.</p>
+<p>Computational Linguistics (CL) is now a very active sub-discipline in applied linguistics. Its main focus is on the computational text analytics, which is essentially about leveraging computational tools, techniques, and algorithms to <em>process</em> and <em>understand</em> natural language data (in spoken or textual formats). Therefore, this course aims to introduce useful strategies and common workflows that have been widely adopted by data scientists to extract useful insights from natural language data. In this course, we will focus on textual data.</p>
 <p>A selective collection of potential topics may include:</p>
 <ul>
 <li>A Pipeline for Natural Language Processing</li>
 <li>Text Normalization</li>
 <li>Text Tokenization</li>
 <li>Parsing and Chunking</li>
-<li>Issues for Chinese Language Processing</li>
+<li>Issues for Chinese Language Processing (Word Segmentation)</li>
 <li>Feature Engineering and Text Vectorization</li>
+<li>Traditional Machine Learning</li>
+<li>Classification Models (Naive Bayes, SVM, Logistic Regression)</li>
+<li>Common Computational Tasks:
+<ul>
 <li>Sentiment Analysis</li>
 <li>Tex Clustering and Topic Modeling</li>
-<li>Network Analysis</li>
-<li>Machine Learning and Computational Linguistics</li>
-<li>Deep Learning and Computational Linguistics</li>
+</ul></li>
+<li>Deep Learning and Neural Network</li>
+<li>Neural Language Model</li>
+<li>Sequence Models
+<ul>
+<li>RNN</li>
+<li>LSTM/GRU</li>
+<li>Sequence-to-sequence Model</li>
+<li>Attention-based Models</li>
+</ul></li>
 <li>Explainable Artificial Intelligence and Computational Linguistics</li>
 </ul>
-<p>This course is extremely hands-on and will lead the students through classic examples of many task-oriented implementations via in-class theme-based tutorial sessions. The main coding language used in this course is Python <a href="https://www.python.org/"><i class="fab  fa-python "></i></a>. We will make extensive use of the language. It is assumed that you know or will quickly learn how to program in Python. In fact, this course assumes that every enrolled student has working knowledge of Python. (If you are not sure if you fulfill the prerequisite, please contact the instructor first.) A test on Python Basics will be conducted on the second week of the class to ensure that we are all on the same page.</p>
-<p>Please note that this course is designed specifically for students in the humanities; computer science majors (who are not linguists) are encouraged to take this course.</p>
+<p>This course is extremely hands-on and will guide the students through classic examples of many task-oriented implementations via in-class theme-based tutorial sessions. The main coding language used in this course is Python <a href="https://www.python.org/"><i class="fab  fa-python "></i></a>. We will make extensive use of the language. It is assumed that you know or will quickly learn how to code in Python. In fact, this course assumes that every enrolled student has <strong>working knowledge</strong> of Python. (If you are not sure if you fulfill the prerequisite, please contact the instructor first.)</p>
+<p>A test on Python Basics will be conducted on the second week of the class to ensure that every enrolled student fulfills the prerequisite. (To be more specific, you are assumed to have already had working knowledge of all the concepts included in the book, <a href="https://www.amazon.com/Lean-Python-Learn-Enough-Useful/dp/1484223845">Lean Python: Learn Just Enough Python to Build Useful Tools</a>). Those who fail on the Python basics test are NOT advised to take this course.</p>
+<p>Please note that this course is designed specifically for <strong>linguistics majors</strong> in humanities. For computer science majors, please note that this course will not feature a thorough description of the mathematical operations behind the algorithms. We focus more on the practical implementation.</p>
 <hr />
 </div>
 <div class="section level1">
@@ -455,7 +467,7 @@ NPL Pipeline
 Week 4
 </td>
 <td style="text-align:left;">
-Machine Learning Basics
+Machine Learning Basics: Regression and Classification
 </td>
 </tr>
 <tr>
@@ -463,7 +475,7 @@ Machine Learning Basics
 Week 5
 </td>
 <td style="text-align:left;">
-Regression and Classification Problems
+Naïve Bayes, Logistic Regression
 </td>
 </tr>
 <tr>
@@ -503,7 +515,7 @@ Midterm Exam
 Week 10
 </td>
 <td style="text-align:left;">
-Toxicity Detection
+Neural Network: A Primer
 </td>
 </tr>
 <tr>
@@ -527,7 +539,7 @@ Deep Learning NLP (Doc2Vec)
 Week 13
 </td>
 <td style="text-align:left;">
-Deep Learning NLP (RNN/LSTM)
+Deep Learning NLP (RNN/LSTM and Neural Language Model)
 </td>
 </tr>
 <tr>
