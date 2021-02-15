@@ -13,7 +13,7 @@
 
 <title>Disclaimer</title>
 
-<script src="site_libs/header-attrs-2.4/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
@@ -42,7 +42,7 @@
   div.column{display: inline-block; vertical-align: top; width: 50%;}
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
-      </style>
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -88,6 +88,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 <link rel="stylesheet" href="bootstrap_superhero.css" type="text/css" />
 
@@ -295,28 +296,28 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">
-    <span class="fa fa-home"></span>
+    <span class="fas fa-home"></span>
      
     Home
   </a>
 </li>
 <li>
   <a href="index.html">
-    <span class="fa fa-book"></span>
+    <span class="fas fa-book"></span>
      
     Lectures
   </a>
 </li>
 <li>
   <a href="data.html">
-    <span class="fa fa-folder-open"></span>
+    <span class="fas fa-folder-open"></span>
      
     Data
   </a>
 </li>
 <li>
   <a href="FAQ.html">
-    <span class="fa fa-question-circle"></span>
+    <span class="fas fa-question-circle"></span>
      
     FAQ
   </a>
@@ -326,27 +327,27 @@ $(document).ready(function () {
         <li class="dropdown-header"></li>
 <li>
   <a href="whiteboard.html">
-    <span class="fa fa-chalkboard"></span>
+    <span class="fas fa-chalkboard"></span>
      
     
   </a>
 </li>
 <li>
   <a href="http://web.ntnu.edu.tw/~alvinchen">
-    <span class="fa fa-user-tie"></span>
+    <span class="fas fa-user-tie"></span>
      
     
   </a>
 </li>
 <li>
   <a href="contact.html">
-    <span class="fa fa-envelope"></span>
+    <span class="fas fa-envelope"></span>
      
   </a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-external-link-alt"></span>
+    <span class="fas fa-external-link-alt"></span>
      
      
     <span class="caret"></span>
@@ -354,14 +355,14 @@ $(document).ready(function () {
   <ul class="dropdown-menu" role="menu">
     <li>
       <a href="http://www.eng.ntnu.edu.tw/">
-        <span class="fa fa-university"></span>
+        <span class="fas fa-university"></span>
          
         NTNU-ENG
       </a>
     </li>
     <li>
       <a href="https://moodle2.ntnu.edu.tw/">
-        <span class="fa fa-link"></span>
+        <span class="fas fa-link"></span>
          
         NTNU-Moodle
       </a>
@@ -402,7 +403,7 @@ $(document).ready(function () {
 <div id="contacting-me" class="section level2">
 <h2>Contacting me</h2>
 <p>If you would like to contact me to understand more about this Disclaimer or wish to contact me concerning any matter relating to it, you may send an email to <a href="mailto:alvinchen@ntnu.edu.tw" class="email">alvinchen@ntnu.edu.tw</a></p>
-<p><strong>This document was last updated on 2021-01-11</strong></p>
+<p><strong>This document was last updated on 2021-02-16</strong></p>
 </div>
 
 
@@ -414,7 +415,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
